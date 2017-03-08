@@ -165,7 +165,7 @@ build/
 /buildtasks
 /artifacts
 *.sln.cache
-src/Orchard.Web/Media/*
+src/Orchard.Web/Media/*/_Profiles
 log.xml
 profiling/
 *.orig
