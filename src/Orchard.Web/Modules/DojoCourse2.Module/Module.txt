@@ -1,0 +1,10 @@
+﻿AntiForgery: enabled
+Author: Lombiq Technologies Ltd.
+Website: http://lombiq.com
+Version: 1.0
+OrchardVersion: 1.10.1
+Features:
+    DojoCourse2.Module:
+        Name: Dojo Course 2 Module
+        Description: This is demo module for Dojo Course 2.
+        Category: Dojo
