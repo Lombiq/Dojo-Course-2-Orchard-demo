@@ -1,0 +1,16 @@
+﻿@using DojoCourse2.Module.Models
+
+@{ 
+    var part = (PersonListPart)Model.ContentPart;
+}
+
+<h1>@T("You are looking at a Person List content item in {0} ({1})", Model.DisplayType, Model.UpperDisplayType)</h1>
+
+<h2>@T.Plural("There is one person.", "There are {0} persons", part.Persons.Count(), part.Persons.Count())</h2>
+
+<ul>
+    @foreach (var person in part.Persons)
+    {
+        <li>@person.Name</li>
+    }
+</ul>

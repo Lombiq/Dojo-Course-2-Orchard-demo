@@ -1,0 +1,25 @@
+﻿@model PersonListPart
+
+@using DojoCourse2.Module.Models
+
+<fieldset>
+    <legend>
+        @T("Person List Settings")
+    </legend>
+    <ol>
+        <li>
+            @Html.LabelFor(model => model.Sex, T("Sex"))
+            @Html.DropDownListFor(model => model.Sex, new SelectList(new[]
+            {
+                new SelectListItem { Text = T("Male").Text, Value = Sex.Male.ToString() },
+                new SelectListItem { Text = T("Female").Text, Value = Sex.Female.ToString() }
+            }, "Value", "Text"))
+            @Html.ValidationMessageFor(model => model.Sex)
+        </li>
+        <li>
+            @Html.LabelFor(model => model.MaxCount, T("Maximum number of persons to display"))
+            <input type="number" min="1" id="@Html.IdFor(model => model.MaxCount)" />
+            @Html.ValidationMessageFor(model => model.MaxCount)
+        </li>
+    </ol>
+</fieldset>

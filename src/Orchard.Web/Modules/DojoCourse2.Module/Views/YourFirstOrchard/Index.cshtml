@@ -1,1 +1,7 @@
-﻿@T("Hello Dojo Course!")
+﻿@{ 
+    //Style.Include("demo-styles.css");
+    Style.Require("DemoStyles");
+    Script.Include("demo-script.js").AtFoot();
+}
+
+@T("Hello Dojo Course!")

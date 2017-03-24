@@ -8,3 +8,4 @@ Features:
         Name: Dojo Course 2 Module
         Description: This is demo module for Dojo Course 2.
         Category: Dojo
+        Dependencies: Orchard.Autoroute, Orchard.Caching, Orchard.Widgets
